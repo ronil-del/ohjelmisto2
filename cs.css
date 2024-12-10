@@ -1,0 +1,53 @@
+body {
+  background: burlywood;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; / Stack children vertically /
+  align-items: center; / Center horizontally /
+  justify-content: flex-start; / Keep elements at the top /
+  height: 100vh; / Full height to manage vertical alignment /
+}
+
+.container {
+  width: 1200px; / Fixed width for the logo container /
+  text-align: center; / Center the logo image inside /
+  margin-top: 50px; / Add spacing from the top /
+}
+.yla_osio{
+  text-align: center; / Center the logo horizontally /
+  margin-top: 20px;
+}
+#eka_nappi {
+  text-align: center;
+  margin-top: 20px;
+}
+.napit_alkusivu {
+    padding: 10px 20px; / Add padding inside the button /
+    font-size: 1.2rem; / Make the button text larger /
+    background-color: #007BFF; / Set button background color /
+    color: white; / Set button text color /
+    border: none; / Remove default border /
+    border-radius: 5px; / Add rounded corners /
+    cursor: pointer; / Change cursor to pointer on hover /
+    transition: background-color 0.3s ease; / Smooth background color change /
+}
+
+.napit_alkusivu:hover {
+    background-color: #0056b3; / Darker blue on hover /
+}
+
+#nappi_uusipeli {
+  height: 80px;
+  width: 400px;
+  font-size: 18px; / Adjust button text size */
+  background-color: lightseagreen;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#paa-logo img{
+  width: 800px;
+  height: 500px;
+}

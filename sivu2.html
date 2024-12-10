@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargo Clicker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #h1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      color: #2c3e50;
+      padding: 10px 20px;
+      border: 3px solid #3498db; /* Blue border */
+      border-radius: 10px; /* Rounded corners */
+      display: inline-block; /* Center the border */
+      margin: 20px auto; /* Centered in the container */
+      text-decoration: underline;
+      text-decoration-color: #3498db;
+    }
+
+    #pisteet{
+      color: #fff;
+      font-weight: bold;
+      background-color: #673ab7; /* Purple background */
+      padding: 5px 8px;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(103, 58, 183, 0.8);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #map {
+      height: 70vh;
+      width: 90vw;
+      margin-top: 10px;
+    }
+
+    #score-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    #score-container span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #kroppa {
+      font-size: 16px;
+      text-align: center;
+      color: #333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="h1">Cargo Clicker</h1>
+  <div id="score-container">
+    <span>Score: <span id="pisteet">0</span></span>
+  </div>
+  <div id="map"></div>
+  <div id="kroppa"></div> <!-- Added kroppa element -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="niko.js"></script>
+</body>
+</html>
